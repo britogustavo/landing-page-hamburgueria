@@ -19,8 +19,7 @@ body{
 .logo {
     position: relative;
     left: 10px;
-    top: 5px;
-    height: 70px;
+    height: 75px;
     width: auto;
     cursor: pointer;
 }
@@ -37,4 +36,22 @@ body{
     gap: 60px;
     margin-top: 25px;
     list-style: none;
+}
+
+.white-btn{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.orange-btn{
+    padding: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 22px;
+    background-color: #FF8C00;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-left: 10px;
 }
