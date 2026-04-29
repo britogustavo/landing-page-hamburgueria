@@ -75,3 +75,15 @@ body{
     cursor: pointer; 
     transform: scale(1.1);
 }
+
+.foto1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.foto2{
+    width: 110%;
+}
