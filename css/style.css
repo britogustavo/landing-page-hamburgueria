@@ -101,43 +101,56 @@ body::-webkit-scrollbar {
 }
 
 .text-main{
-    position: relative;
+    position: absolute;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    margin-left: 3rem;
     z-index: 2;
+    left: clamp(2rem, 4vw, 6rem);
+    top: 20vh;
+}
+
+@media (max-width: 768px) {
+    .text-main {
+        left: 40%;
+        transform: translateX(-50%);
+        top: 30vh;
+    }
 }
 
 .text-w{
     display: flex;
-    margin-left: 3rem;
     color: #ffffff;
-    font-size: clamp(1.5rem, 7vw, 40rem);
+    font-size: clamp(2rem, 7vw, 6rem);
     transform: rotate(-8deg);
     cursor: pointer;
 }
 
 .text-o{
-    font-size: clamp(1.5rem, 7vw, 40rem);
+    font-size: clamp(2rem, 7vw, 6rem);
     color: #FF8C00;
     transform: rotate(-8deg);
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .text-w,
+    .text-o {
+        font-size: clamp(2.5rem, 14vw, 4rem);
+    }
+}
+
 .btn-main{
     position: relative;
-    padding: 1rem;
-    margin-top: 5.8rem;
-    margin-left: 12rem;
-    margin-right: auto;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
     z-index: 2;
-    font-size: clamp(1.3rem, 0.7vw, 6rem);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     background-color: #FF8C00;
     color: #431008;
     text-decoration: none;
     border-radius: 6px;
     transition: background-color 0.4s ease;
-    display: inline-block;
 }
 
 .btn-main:hover{
